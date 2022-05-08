@@ -1,0 +1,39 @@
+
+.post-form-page{
+    position: absolute;
+    top:45%;
+    left:50%;
+    /* background-color: aqua; */
+    width: 300px;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.post-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.post-form-btn{
+    background-color: var(--navy);
+    cursor: pointer;
+    align-self: flex-end;
+    border: none;
+    color: white;
+    font-weight: 400;
+    border-radius: 1px;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+}
+
+.post-field{
+    border: none;
+    padding: 1rem;
+    outline: none;
+    font-size: 1.2rem;
+    
+}
+

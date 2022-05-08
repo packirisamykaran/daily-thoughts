@@ -1,0 +1,42 @@
+
+
+
+
+.app-outlet{
+    padding-bottom: 3rem;
+}
+
+.nav{
+    position: fixed;
+    bottom: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--navy);
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+
+
+}
+
+.nav>*{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem 0.5rem ;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .nav{
+        width: 100%;
+        transform: translateX(-5%);
+    }
+}
+
+
+
