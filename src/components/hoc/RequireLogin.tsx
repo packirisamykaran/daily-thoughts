@@ -4,7 +4,7 @@ import React, { ReactNode, useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 import Login from '../auth/Login';
 import { useAppContext } from '../../contexts/AppProvider';
-import Feed from '../feed/Feed';
+
 
 function RequireLogin({children}:{children:ReactNode}) {
 

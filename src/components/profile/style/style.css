@@ -34,19 +34,7 @@
   color: var(--dark-blue);
 }
 
-.update-profile-btn {
-  margin-top: 0.5rem;
-  margin-inline: auto;
-  width: 50%;
-  border-radius: 10px;
-  outline: none;
-  color: var(--navy);
-  border: 2px solid var(--navy);
-  background-color: white;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.3rem 0.7rem;
-}
+
 
 .ffp {
   margin-top: 0.5rem;
@@ -67,5 +55,47 @@
   color: black;
 }
 
+#followuser{
+
+  border: 2px solid var(--dark-blue) ;
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  background-color: var(--dark-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+}
+
+#followeduser{
+  border: 2px solid var(--dark-blue) ;
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+  color: var(--dark-blue);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+}
+
+#updateprofile {
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+}
 
 /*# sourceMappingURL=style.css.map */

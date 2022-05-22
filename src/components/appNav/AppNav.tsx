@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import { useAppContext } from '../../contexts/AppProvider';
 import './style/style.css'
 
 export default function AppNav() {
+  
+  const appContext = useAppContext()
+  let username = appContext.userLoggedin.user;
   return (
     <div className="app-nav">
         <div className="app-outlet">
@@ -10,10 +14,10 @@ export default function AppNav() {
         </div>
         <div className="nav">
             <Link to ='feed'>Feed</Link>
-            <Link to ='expolre'>Explore</Link>
+            <Link to ='explore'>Explore</Link>
             <Link to ='post'>Post</Link>
             <Link to ='activity'>Activity</Link>
-            <Link to ='profile'>Profile</Link>
+            <Link to ={'profile/'+username}>Profile</Link>
         </div>
     </div>
   )

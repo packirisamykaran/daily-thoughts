@@ -16,6 +16,17 @@ export type postsType = {
 
 }
 
+
+function compare(a: postType, b: postType) {
+  if (a.date < b.date) {
+    return 1;
+  }
+  if (a.date > b.date) {
+    return -1;
+  }
+  return 0;
+}
+
 export default function Posts(props:postsType) {
 
 
@@ -28,7 +39,6 @@ export default function Posts(props:postsType) {
     
     const getName = async()=>{
       const profile = await profileDetails(username);
-      console.log("runnin")
       if(profile){
         setName(profile.name);
       }
@@ -43,12 +53,12 @@ export default function Posts(props:postsType) {
   
   
  
-
-
-  const postsComponent = props.posts.map((post, i)=>{
+  let posts = props.posts;
+  posts.sort(compare)
+  const postsComponent = posts.map((post, i)=>{
       let date = (post.date as unknown as Timestamp).toDate();
-      const postDate = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}.${date.getHours()}:${date.getHours()}:${date.getMinutes()}`
-    
+      const postDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}.${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`    
+     
       return <div className="post" key={i}>
         <div className="uname-name">
           <div className="uname">@{username}</div>
@@ -61,7 +71,9 @@ export default function Posts(props:postsType) {
           {postDate}
         </div>
       </div>
-  })
+      
+  })  
+
 
   return ( 
     <div className="posts">    

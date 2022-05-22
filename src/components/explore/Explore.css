@@ -1,0 +1,33 @@
+.explore-query-form{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    
+}
+
+#query{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 0 0.5rem;  
+    color:var(--navy) 
+}
+
+.queries{
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.queries>*{
+    padding: 0 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    margin-inline:auto;
+    
+}
