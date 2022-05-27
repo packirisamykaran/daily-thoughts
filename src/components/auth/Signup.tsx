@@ -65,7 +65,7 @@ function Signup() {
 
 
   const onSubmit = (values:signupValueType, actions:FormikHelpers<signupValueType>)=>{
-    console.log("submitted")
+   
       signup(values);
       navigate('/feed')
       
@@ -77,7 +77,7 @@ function Signup() {
       <Formik initialValues={initialValues}  validate={(values:signupValueType) =>validate(values)} validationSchema={validScheme} onSubmit={(values, actions)=>{onSubmit(values, actions)}}>
         {
           (fomrikProps)=>{
-           console.log(fomrikProps)
+           
             return (
               <Form  className='signup-form'>
                 <div className="form-container">

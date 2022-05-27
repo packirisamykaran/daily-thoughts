@@ -13,7 +13,7 @@ export default function Explore() {
     }
     
     const onSubmit=()=>{
-        console.log("submit")
+        // console.log("submit")
     }
 
     const validate = async(values:{query:string})=>{

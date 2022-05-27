@@ -98,4 +98,24 @@
   padding: 0.3rem 0.7rem;
 }
 
+.update-link{
+  width:100%;
+  text-align: center;
+}
+
+.logout-btn{
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 40%;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--navy);
+  color:white;
+  border: 2px solid var(--navy);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=style.css.map */

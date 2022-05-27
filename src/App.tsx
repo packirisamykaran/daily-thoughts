@@ -10,6 +10,7 @@ import AppNav from './components/appNav/AppNav';
 import PostForm from './components/post/PostForm';
 import Explore from './components/explore/Explore';
 import Feeds from './components/feed/Feeds';
+import UpdateProfile from './components/profile/UpdateProfile';
 
 
 function App() {
@@ -19,13 +20,14 @@ function App() {
       <AppProvider>
       <div className="App">
             <Routes>
-              <Route path='/' element={<AppNav/>} >
-                <Route path='profile/:username' element={<Profile/>} />
-                <Route path='explore' element={<Explore/>} >
-                  <Route path='profile/:username' element={<Profile/>} />
+              <Route path='/' element={<RequireLogin><AppNav/></RequireLogin>} >
+                <Route  path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
+                <Route path='explore' element={<RequireLogin><Explore /></RequireLogin>} >
+                  <Route path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
                 </Route>
-                <Route path='post' element={<PostForm/>} />
-                <Route path="feed" element={<Feeds/>} />
+                <Route path='post' element={<RequireLogin><PostForm/></RequireLogin>} />
+                <Route path="feed" element={<RequireLogin><Feeds/></RequireLogin>} />
+                <Route path='updateprofile' element={<RequireLogin><UpdateProfile/></RequireLogin>}/>
               </Route>
               <Route path='signup' element={<Signup/>} />
               <Route path="login" element={<Login />} />

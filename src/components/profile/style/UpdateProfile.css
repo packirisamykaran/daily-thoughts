@@ -1,0 +1,45 @@
+.updatepage{
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--navy);
+}
+
+.update-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    padding: 1rem 0.5rem;
+}
+
+.update-field{
+    font-size: 1.3rem;
+    border: none;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid var(--dark-blue);
+    
+}
+
+#submit-btn{
+    background-color: var(--navy);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    width: 50%;
+    align-self: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+#username{
+    margin:0;
+}
+
+.username-container{
+    margin-bottom: 1rem;
+}

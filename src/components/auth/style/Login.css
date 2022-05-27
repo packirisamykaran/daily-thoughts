@@ -93,3 +93,14 @@
   color:white
 }
 
+
+.signup-link{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+    padding: 0.2rem 0.3rem;
+    border-radius: 10px;
+
+}
+

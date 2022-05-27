@@ -6,6 +6,7 @@ import Posts, { postsType, postType } from '../post/Posts'
 import './Feed.css'
 import { Timestamp } from 'firebase/firestore';
 import { Link } from 'react-router-dom';
+import gif from '../media/loading.gif'
 
 export type feedType = {
   name: string;
@@ -80,9 +81,14 @@ export default function Feeds() {
       </div>
     })
 
-  return (
-    <div className="posts">{feedDisplay}</div>
-  )
+  if(feedList){
+    return (
+      <div className="posts">{feedDisplay}</div>
+    )
+  }
+  else{
+    return <img src={gif} alt="dsa" className="loading" />
+  }
 }
 
 

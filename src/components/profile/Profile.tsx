@@ -3,7 +3,7 @@ import { useAppContext } from '../../contexts/AppProvider';
 import { profileDetailsType, profileDetails } from '../database/profile';
 import Posts, { postType } from '../post/Posts';
 import './style/style.css'
-import { useParams } from 'react-router-dom';
+import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { follow_user, isUserFollowed } from '../database/explore';
 
 
@@ -16,6 +16,10 @@ export default function Profile() {
   //context
   const appContext = useAppContext()
   let user= appContext.userLoggedin.user;
+  let setUser = appContext.userLoggedin.setUser;
+
+  let navigate = useNavigate();
+  
 
   
   const {username} = useParams()
@@ -32,7 +36,7 @@ export default function Profile() {
     followers: [],
     following: [],
     posts: [],
-    bio: ''
+    bio: ' '
   });
 
 
@@ -42,7 +46,7 @@ export default function Profile() {
 
   const Flw_upt_btn = ()=>{
     if(isCurrentUser){
-      return <button id="updateprofile" >Update Profile</button>
+      return <Link className='update-link' to={"../updateprofile"}><button id="updateprofile" >Update Profile</button></Link>
     }else{
       if(isFollowingUser){
         return <button id="followeduser" onClick={flw_unflw_user}>Following</button>
@@ -60,6 +64,11 @@ export default function Profile() {
       await follow_user(user, username);
     }
     setisFollowingUser(!isFollowingUser)
+  }
+
+  const logout = ()=>{
+    navigate('../')
+    setUser('');
   }
 
   useEffect(()=>{
@@ -99,6 +108,7 @@ export default function Profile() {
         <h1 className="name">{profile.name}</h1>
         <h3 className="username">@{profile.username}</h3>
         <Flw_upt_btn/>
+        <button className='logout-btn' onClick={logout} >Logout</button>
         <h3 className="bio">
           {profile.bio}
         </h3>

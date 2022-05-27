@@ -9,6 +9,9 @@ export default function AppNav() {
   let username = appContext.userLoggedin.user;
   return (
     <div className="app-nav">
+      <div className="heading">
+        DailyThoughts
+      </div>
         <div className="app-outlet">
           <Outlet/>
         </div>
@@ -16,7 +19,6 @@ export default function AppNav() {
             <Link to ='feed'>Feed</Link>
             <Link to ='explore'>Explore</Link>
             <Link to ='post'>Post</Link>
-            <Link to ='activity'>Activity</Link>
             <Link to ={'profile/'+username}>Profile</Link>
         </div>
     </div>

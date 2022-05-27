@@ -2,7 +2,7 @@ import './style/Login.css'
 import   { Formik, Form, Field, FormikHelpers, ErrorMessage } from 'formik'
 import { useAppContext} from '../../contexts/AppProvider';
 import { checkUsernamePassword } from '../database/auth';
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import * as Yup from 'yup'
 
 
@@ -29,6 +29,8 @@ function Login() {
 
   //Use App Context
   const appContext = useAppContext()
+  let navigate = useNavigate();
+
 
 
   const onSubmit = async (values:LoginValueTypes, actions:FormikHelpers<LoginValueTypes>)=>{
@@ -38,6 +40,7 @@ function Login() {
 
     if(credentialCheck) {
       appContext.userLoggedin.setUser(values.username);
+      navigate('./feed')
     }
     else{
       actions.resetForm();
@@ -65,6 +68,7 @@ function Login() {
               <ErrorMessage className='error' name='password'/>
             </div>
             <button type='submit' className='login-submit-btn'>LOGIN</button>
+            <Link to="signup" className='signup-link'>SIGN UP</Link>
           </div>
         </Form>
       </Formik>
