@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/daily-thoughts/static/css/main.3c9116e6.css",
+    "main.js": "/daily-thoughts/static/js/main.ebf1c1f8.js",
+    "static/js/787.32d1e6fc.chunk.js": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js",
+    "static/media/loading.gif": "/daily-thoughts/static/media/loading.9220ce80720a4faffde0.gif",
+    "index.html": "/daily-thoughts/index.html",
+    "main.3c9116e6.css.map": "/daily-thoughts/static/css/main.3c9116e6.css.map",
+    "main.ebf1c1f8.js.map": "/daily-thoughts/static/js/main.ebf1c1f8.js.map",
+    "787.32d1e6fc.chunk.js.map": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c9116e6.css",
+    "static/js/main.ebf1c1f8.js"
+  ]
+}
