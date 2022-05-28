@@ -10,7 +10,7 @@ export default async function addpost(post:string, username:string) {
     const date = new Date();
     let name = ' '
     
-    console.log(date)
+    
 
    
 
@@ -29,7 +29,7 @@ export default async function addpost(post:string, username:string) {
             posts:arrayUnion(postObj)
         })
         
-        console.log("eddited")
+        
         
     } catch (error) {
         console.log("error")

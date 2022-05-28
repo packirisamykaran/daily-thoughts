@@ -19,7 +19,7 @@ export default function () {
   }
 
   const onSubmit=(values:postInputType, actions:FormikHelpers<postInputType>)=>{
-    console.log(appContext.userLoggedin.user);
+    
 
     addpost(values.post, appContext.userLoggedin.user);
 
