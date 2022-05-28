@@ -24,6 +24,7 @@ export default function Profile() {
   
   const {username} = useParams()
   
+  
 
   //Profile states
   const [isCurrentUser, setisCurrentUser] = useState<boolean>()
@@ -46,7 +47,12 @@ export default function Profile() {
 
   const Flw_upt_btn = ()=>{
     if(isCurrentUser){
-      return <Link className='update-link' to={"../updateprofile"}><button id="updateprofile" >Update Profile</button></Link>
+      return (
+        <>
+        <Link className='update-link' to={"../updateprofile"}><button id="updateprofile" >Update Profile</button></Link>
+      <button className='logout-btn' onClick={logout} >Logout</button>
+        </>
+        )
     }else{
       if(isFollowingUser){
         return <button id="followeduser" onClick={flw_unflw_user}>Following</button>
@@ -102,13 +108,15 @@ export default function Profile() {
 
   }, [username, isFollowingUser])
 
+  
+
   return (
     <div className="profile">
       <div className="profile-info">
         <h1 className="name">{profile.name}</h1>
         <h3 className="username">@{profile.username}</h3>
         <Flw_upt_btn/>
-        <button className='logout-btn' onClick={logout} >Logout</button>
+        
         <h3 className="bio">
           {profile.bio}
         </h3>
@@ -118,7 +126,7 @@ export default function Profile() {
           <div>Followers: <div className="num">{profile.followers.length}</div></div>
         </div>
       </div>
-      <Posts posts={profile.posts}/>
+      <Posts profile ={profile} username={profile.username}/>
     </div>
   )
 }

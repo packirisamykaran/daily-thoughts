@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useAppContext } from "../../contexts/AppProvider";
 import { async } from "@firebase/util";
 import { postType } from "../post/Posts";
-import { profile } from "console";
 import { updateProfileType } from "../profile/UpdateProfile";
 
 
@@ -30,7 +29,6 @@ export const profileDetails = async(username:string)=>{
             const docSnap = await getDoc(docRef);
            if(docSnap.exists()){
             const data = docSnap.data()
-            
     
             let profile:profileDetailsType = {
                 name: data.name,

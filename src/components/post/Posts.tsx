@@ -1,7 +1,7 @@
 import { Timestamp } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../../contexts/AppProvider';
-import { profileDetails } from '../database/profile';
+import { profileDetails, profileDetailsType } from '../database/profile';
 import './style/Posts.css'
 
 export type postType={
@@ -27,33 +27,37 @@ function compare(a: postType, b: postType) {
   return 0;
 }
 
-export default function Posts(props:postsType) {
+export default function Posts(props:{profile:profileDetailsType, username:string}) {
 
 
-  const appContext = useAppContext();
-  const username = appContext.userLoggedin.user
+  // const appContext = useAppContext();
+  // const username = appContext.userLoggedin.user
 
-  const[name, setName] = useState('')
+  // const[name, setName] = useState('')
 
-  useEffect( () => {
+  // useEffect( () => {
     
-    const getName = async()=>{
-      const profile = await profileDetails(username);
-      if(profile){
-        setName(profile.name);
-      }
+  //   const getName = async()=>{
+  //     const profile = await profileDetails(username);
+  //     if(profile){
+  //       setName(profile.name);
+  //     }
 
-    }
+  //   }
     
-    getName();
+  //   getName();
     
-  }, [])
+  // }, [])
 
+  const username = props.username;
+  const posts = props.profile.posts;
+  const name = props.profile.name
+  
 
   
   
  
-  let posts = props.posts;
+ 
   posts.sort(compare)
   const postsComponent = posts.map((post, i)=>{
       let date = (post.date as unknown as Timestamp).toDate();

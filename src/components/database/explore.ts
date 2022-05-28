@@ -46,7 +46,7 @@ export const follow_user = async (user:string, friendUser:string )=>{
         const userDocRef = doc(db, "deepthought", user);
         const friendDocRef = doc(db, "deepthought", friendUser);
 
-        console.log(user, friendUser)
+        
 
         const userData =  (await getDoc(userDocRef)).data()
         if(userData){
@@ -62,7 +62,6 @@ export const follow_user = async (user:string, friendUser:string )=>{
                     followers: arrayRemove(user)
                 })
 
-                console.log("removesd")
             }
             else{
                 await updateDoc(userDocRef,{
@@ -74,7 +73,7 @@ export const follow_user = async (user:string, friendUser:string )=>{
                 })
             }
 
-            console.log(userData)
+           
         }
 
         
