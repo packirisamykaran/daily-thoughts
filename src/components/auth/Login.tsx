@@ -68,7 +68,7 @@ function Login() {
               <ErrorMessage className='error' name='password'/>
             </div>
             <button type='submit' className='login-submit-btn'>LOGIN</button>
-            <Link to="signup" className='signup-link'>SIGN UP</Link>
+            <Link to="../signup" className='signup-link'>SIGN UP</Link>
           </div>
         </Form>
       </Formik>

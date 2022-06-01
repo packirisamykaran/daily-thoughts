@@ -20,17 +20,17 @@ function App() {
       <AppProvider>
       <div className="App">
             <Routes>
-              <Route path='/daily-thoughts' element={<RequireLogin><AppNav/></RequireLogin>} >
-                <Route  path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
-                <Route path='explore' element={<RequireLogin><Explore /></RequireLogin>} >
-                  <Route path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
+              <Route path="/daily-thoughts" element={<RequireLogin><AppNav/></RequireLogin>} >
+                  <Route  path='profile/:username' element={<Profile/>} />
+                  <Route path='explore' element={<Explore />} >
+                    <Route path='profile/:username' element={<Profile/>} />
+                  </Route>
+                  <Route path='post' element={<PostForm/>} />
+                  <Route  element={<Feeds/>} />
+                  <Route path='updateprofile' element={<UpdateProfile/>}/>
                 </Route>
-                <Route path='post' element={<RequireLogin><PostForm/></RequireLogin>} />
-                <Route path="feed" element={<RequireLogin><Feeds/></RequireLogin>} />
-                <Route path='updateprofile' element={<RequireLogin><UpdateProfile/></RequireLogin>}/>
-              </Route>
-              <Route path='signup' element={<Signup/>} />
-              <Route path="login" element={<Login />} />
+                <Route path='signup' element={<Signup/>} />
+                <Route path="login" element={<Login />} />
             </Routes>
       </div>
       </AppProvider>

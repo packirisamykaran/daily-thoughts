@@ -14,6 +14,7 @@ function RequireLogin({children}:{children:ReactNode}) {
 
     if(!user){
         
+        
         return <Login/>
     }
     else{
