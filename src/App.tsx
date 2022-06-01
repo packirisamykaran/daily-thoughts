@@ -26,7 +26,7 @@ function App() {
                     <Route path='profile/:username' element={<Profile/>} />
                   </Route>
                   <Route path='post' element={<PostForm/>} />
-                  <Route  element={<Feeds/>} />
+                  <Route  path ="feed" element={<Feeds/>} />
                   <Route path='updateprofile' element={<UpdateProfile/>}/>
                 </Route>
                 <Route path='signup' element={<Signup/>} />

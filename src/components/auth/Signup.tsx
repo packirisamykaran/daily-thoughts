@@ -67,7 +67,7 @@ function Signup() {
   const onSubmit = (values:signupValueType, actions:FormikHelpers<signupValueType>)=>{
    
       signup(values);
-      navigate('/feed')
+      navigate('../login')
       
   }
 
