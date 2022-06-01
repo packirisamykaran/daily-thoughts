@@ -20,7 +20,7 @@ function App() {
       <AppProvider>
       <div className="App">
             <Routes>
-              <Route path='/' element={<RequireLogin><AppNav/></RequireLogin>} >
+              <Route path='/daily-thoughts' element={<RequireLogin><AppNav/></RequireLogin>} >
                 <Route  path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
                 <Route path='explore' element={<RequireLogin><Explore /></RequireLogin>} >
                   <Route path='profile/:username' element={<RequireLogin><Profile/></RequireLogin>} />
