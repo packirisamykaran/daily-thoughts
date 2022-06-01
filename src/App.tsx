@@ -1,7 +1,7 @@
 
 import Login from './components/auth/Login';
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import AppProvider from './contexts/AppProvider';
 import RequireLogin from "./components/hoc/RequireLogin"
 import Profile from './components/profile/Profile';
@@ -16,7 +16,7 @@ import UpdateProfile from './components/profile/UpdateProfile';
 function App() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppProvider>
       <div className="App">
             <Routes>
@@ -34,7 +34,7 @@ function App() {
             </Routes>
       </div>
       </AppProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
