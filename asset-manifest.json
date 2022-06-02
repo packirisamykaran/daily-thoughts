@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/daily-thoughts/static/css/main.e313770b.css",
-    "main.js": "/daily-thoughts/static/js/main.0b9cd10b.js",
+    "main.js": "/daily-thoughts/static/js/main.67ddb1aa.js",
     "static/js/787.32d1e6fc.chunk.js": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js",
     "static/media/loading.gif": "/daily-thoughts/static/media/loading.9220ce80720a4faffde0.gif",
     "index.html": "/daily-thoughts/index.html",
     "main.e313770b.css.map": "/daily-thoughts/static/css/main.e313770b.css.map",
-    "main.0b9cd10b.js.map": "/daily-thoughts/static/js/main.0b9cd10b.js.map",
+    "main.67ddb1aa.js.map": "/daily-thoughts/static/js/main.67ddb1aa.js.map",
     "787.32d1e6fc.chunk.js.map": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e313770b.css",
-    "static/js/main.0b9cd10b.js"
+    "static/js/main.67ddb1aa.js"
   ]
 }
