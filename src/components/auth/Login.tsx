@@ -40,7 +40,7 @@ function Login() {
 
     if(credentialCheck) {
       appContext.userLoggedin.setUser(values.username);
-      navigate('../daily-thoughts/feed')
+      navigate('../feed')
     }
     else{
       actions.resetForm();
