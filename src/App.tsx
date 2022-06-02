@@ -20,7 +20,7 @@ function App() {
       <AppProvider>
       <div className="App">
             <Routes>
-                <Route  path="/"  element={<div>hello</div>} >
+                <Route  path="/" element={<RequireLogin><AppNav/></RequireLogin>} >
                   <Route  path='profile/:username' element={<Profile/>} />
                   <Route path='explore' element={<Explore />} >
                     <Route path='profile/:username' element={<Profile/>} />
