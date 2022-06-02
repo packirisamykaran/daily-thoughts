@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/daily-thoughts/static/css/main.3c9116e6.css",
-    "main.js": "/daily-thoughts/static/js/main.7ab93424.js",
+    "main.css": "/daily-thoughts/static/css/main.e313770b.css",
+    "main.js": "/daily-thoughts/static/js/main.1e5c3b3f.js",
     "static/js/787.32d1e6fc.chunk.js": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js",
     "static/media/loading.gif": "/daily-thoughts/static/media/loading.9220ce80720a4faffde0.gif",
     "index.html": "/daily-thoughts/index.html",
-    "main.3c9116e6.css.map": "/daily-thoughts/static/css/main.3c9116e6.css.map",
-    "main.7ab93424.js.map": "/daily-thoughts/static/js/main.7ab93424.js.map",
+    "main.e313770b.css.map": "/daily-thoughts/static/css/main.e313770b.css.map",
+    "main.1e5c3b3f.js.map": "/daily-thoughts/static/js/main.1e5c3b3f.js.map",
     "787.32d1e6fc.chunk.js.map": "/daily-thoughts/static/js/787.32d1e6fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c9116e6.css",
-    "static/js/main.7ab93424.js"
+    "static/css/main.e313770b.css",
+    "static/js/main.1e5c3b3f.js"
   ]
 }
