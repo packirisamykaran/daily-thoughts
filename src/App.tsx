@@ -20,7 +20,7 @@ function App() {
       <AppProvider>
       <div className="App">
             <Routes>
-                <Route  path="/" element={<div>hello</div>} >
+                <Route  path="/"  element={<div>hello</div>} >
                   <Route  path='profile/:username' element={<Profile/>} />
                   <Route path='explore' element={<Explore />} >
                     <Route path='profile/:username' element={<Profile/>} />
@@ -29,8 +29,8 @@ function App() {
                   <Route  path ="feed" element={<Feeds/>} />
                   <Route path='updateprofile' element={<UpdateProfile/>}/>
                 </Route>
-                <Route path='/signup' element={<Signup/>} />
-                <Route path="/login" element={<Login />} />
+                <Route path='signup' element={<Signup/>} />
+                <Route path="login" element={<Login />} />
                 {/* <Route path="*" element={<Login/>}/> */}
             </Routes>
       </div>
