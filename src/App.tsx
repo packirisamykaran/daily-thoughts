@@ -29,8 +29,8 @@ function App() {
                   <Route  path ="feed" element={<Feeds/>} />
                   <Route path='updateprofile' element={<UpdateProfile/>}/>
                 </Route>
-                <Route path='signup' element={<Signup/>} />
-                <Route path="login" element={<Login />} />
+                <Route path='/signup' element={<Signup/>} />
+                <Route path="/login" element={<Login />} />
                 {/* <Route path="*" element={<Login/>}/> */}
             </Routes>
       </div>
