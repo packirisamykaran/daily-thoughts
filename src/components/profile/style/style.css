@@ -34,7 +34,18 @@
   color: var(--dark-blue);
 }
 
-
+.update-profile-btn {
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid var(--navy);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+}
 
 .ffp {
   margin-top: 0.5rem;
@@ -55,9 +66,25 @@
   color: black;
 }
 
-#followuser{
+.posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
 
-  border: 2px solid var(--dark-blue) ;
+.post {
+  padding: 1rem 0.2rem;
+  border-top: 1px solid var(--navy);
+  border-radius: 5px;
+}
+
+#followuser {
+  border: 2px solid var(--dark-blue);
   margin-top: 0.5rem;
   margin-inline: auto;
   width: 50%;
@@ -70,8 +97,8 @@
   padding: 0.3rem 0.7rem;
 }
 
-#followeduser{
-  border: 2px solid var(--dark-blue) ;
+#followeduser {
+  border: 2px solid var(--dark-blue);
   margin-top: 0.5rem;
   margin-inline: auto;
   width: 50%;
@@ -98,24 +125,23 @@
   padding: 0.3rem 0.7rem;
 }
 
-.update-link{
-  width:100%;
+.update-link {
+  width: 100%;
   text-align: center;
 }
 
-.logout-btn{
+.logout-btn {
   margin-top: 0.5rem;
   margin-inline: auto;
   width: 40%;
   border-radius: 10px;
   outline: none;
   background-color: var(--navy);
-  color:white;
+  color: white;
   border: 2px solid var(--navy);
   font-size: 1rem;
   font-weight: 500;
   padding: 0.3rem 0.5rem;
   opacity: 0.8;
 }
-
 /*# sourceMappingURL=style.css.map */
