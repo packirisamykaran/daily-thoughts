@@ -61,7 +61,7 @@ export default function Posts(props:{profile:profileDetailsType, username:string
   posts.sort(compare)
   const postsComponent = posts.map((post, i)=>{
       let date = (post.date as unknown as Timestamp).toDate();
-      const postDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}.${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`    
+      const postDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}.${date.getHours()}:${date.getMinutes()}`    
      
       return <div className="post" key={i}>
         <div className="uname-name">

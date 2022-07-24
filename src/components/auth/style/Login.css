@@ -90,7 +90,8 @@
   outline: none;
   border: none;
   background-color: rgb(71, 121, 182);  
-  color:white
+  color:white;
+  cursor: pointer;
 }
 
 
