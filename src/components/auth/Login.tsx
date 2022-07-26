@@ -50,6 +50,11 @@ function Login() {
 
   return (
     <div className="login-page">
+      <div className="users-login">
+        <div className='heading'>Sign up or use credential below to explore the App</div>
+        <div>Username: karan</div>
+        <div>password: test</div>
+      </div>
       <div className='lp-headings'>
         <h1 className='lp-heading'>Login</h1>
         <h3 className="lp-sub-heading">Please sign in to continue</h3>

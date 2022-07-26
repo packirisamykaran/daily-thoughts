@@ -10,6 +10,7 @@
     left: 50%;
     row-gap: 2rem;
 
+
 }
 
 .lp-heading{
@@ -105,3 +106,23 @@
 
 }
 
+
+.users-login{
+    position: absolute;
+    top: -9rem;
+
+}
+
+.users-login> div{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.users-login> .heading{
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: none;
+    color: black;
+    border:none;
+    text-shadow: none;
+}

@@ -80,8 +80,6 @@
 
 .post {
   padding: 1rem 0.2rem;
-  border-top: 1px solid var(--navy);
-  border-radius: 5px;
 }
 
 #followuser {
