@@ -1,6 +1,6 @@
 # Daily Thoughts
 
-Social Media App with React.js and Firebase
+Social Media App with React.js and Firebase \
 website: https://packirisamykaran.github.io/daily-thoughts/
 
 # Overview
