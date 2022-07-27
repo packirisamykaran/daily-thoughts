@@ -1,4 +1,4 @@
-#Daily Thoughts
+# Daily Thoughts
 
 Social Media App with React.js and Firebase
 
