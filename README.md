@@ -3,8 +3,16 @@
 Social Media App with React.js and Firebase \
 website: https://packirisamykaran.github.io/daily-thoughts/
 
-# Login Page
+## Login page
 ![image](https://user-images.githubusercontent.com/43819446/181182957-e69ca012-f6ea-4f7d-a240-22541269cf2d.png)
+
+## Sign up page
+![image](https://user-images.githubusercontent.com/43819446/181187164-92af3be9-386c-4e0a-8b67-97127b0e6027.png)
+
+## Post your daily thoughts
+
+
+https://user-images.githubusercontent.com/43819446/181187437-f8da6d07-aced-4267-93a2-b7d034cbde61.mp4
 
 
 
