@@ -15,6 +15,16 @@ website: https://packirisamykaran.github.io/daily-thoughts/
 https://user-images.githubusercontent.com/43819446/181187437-f8da6d07-aced-4267-93a2-b7d034cbde61.mp4
 
 
+## Follow you friends
+
+
+https://user-images.githubusercontent.com/43819446/181187782-d5aa77d3-dc54-4657-8cd4-eca170ce2c52.mp4
+
+
+## Update profile and logout
+
+
+https://user-images.githubusercontent.com/43819446/181187825-4c53a6b9-849f-4afc-8c70-e85bcd9f9f0e.mp4
 
 
 
