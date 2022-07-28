@@ -12,19 +12,20 @@ website: https://packirisamykaran.github.io/daily-thoughts/
 ## Post your daily thoughts
 
 
-https://user-images.githubusercontent.com/43819446/181187437-f8da6d07-aced-4267-93a2-b7d034cbde61.mp4
+![post](https://user-images.githubusercontent.com/43819446/181401391-1b0c253b-3878-4869-be23-6dbe225c845e.gif)
+
 
 
 ## Follow you friends
 
+![follow](https://user-images.githubusercontent.com/43819446/181401407-3d97af9c-2d16-4d17-9f7e-ebf2c84d127f.gif)
 
-https://user-images.githubusercontent.com/43819446/181187782-d5aa77d3-dc54-4657-8cd4-eca170ce2c52.mp4
 
 
 ## Update profile and logout
 
 
-https://user-images.githubusercontent.com/43819446/181187825-4c53a6b9-849f-4afc-8c70-e85bcd9f9f0e.mp4
+![update-logout](https://user-images.githubusercontent.com/43819446/181401417-f739e473-cb6c-4cb1-a531-8760e052fab7.gif)
 
 
 
